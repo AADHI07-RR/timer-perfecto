@@ -161,5 +161,17 @@ function resetTimer() {
   text-shadow: 4px 4px black;
   margin-bottom: 15px;
 }
+.credit {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+
 
 
