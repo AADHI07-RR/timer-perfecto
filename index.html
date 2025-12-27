@@ -30,13 +30,16 @@
   <!-- ❌ Custom Try Again Popup -->
   <div id="popup" class="popup hidden">
     <div class="popup-box">
-      <h2>❌ Try Again!</h2>
-      <p>You missed the perfect time.</p>
-      <button onclick="closePopup()">OK</button>
-    </div>
+  <h2>❌ Try Again!</h2>
+  <p class="stopped-label">You stopped at</p>
+  <div id="stoppedTime" class="stopped-time">00.00</div>
+  <button onclick="closePopup()">OK</button>
+</div>
+
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
