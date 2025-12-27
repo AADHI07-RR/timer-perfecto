@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timer Perfecto</title>
+
+  <!-- Graffiti-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Timer Perfecto</h1>
+  <p class="subtitle">Hit exactly <span>10.00</span> seconds</p>
+
+  <div id="timer">00.00</div>
+
+  <div class="buttons">
+    <button class="start" onclick="startTimer()">START</button>
+    <button class="stop" onclick="stopTimer()">STOP</button>
+  </div>
+
+  <h2 id="result"></h2>
+
+  <div id="confetti"></div>
+
+  <!-- ❌ Custom Try Again Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-box">
+      <h2>❌ Try Again!</h2>
+      <p>You missed the perfect time.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
