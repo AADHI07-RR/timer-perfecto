@@ -67,3 +67,17 @@ function resetTimer() {
   startTime = null;
   document.getElementById("timer").innerText = "00.00";
 }
+.stopped-label {
+  color: #fff;
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+.stopped-time {
+  font-size: 4rem;          /* BIG */
+  color: #ff0000;           /* Red */
+  text-shadow: 4px 4px black;
+  margin-bottom: 15px;
+}
+
+
