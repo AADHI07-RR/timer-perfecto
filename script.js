@@ -23,7 +23,7 @@ function updateTimer() {
 function stopTimer() {
   if (!isRunning) return;
 
-  clearInterval(interval);   // ⏹️ STOP TIMER
+  clearInterval(interval);
   isRunning = false;
 
   const time = parseFloat(document.getElementById("timer").innerText);
@@ -31,9 +31,12 @@ function stopTimer() {
   if (Math.abs(time - target) <= 0.05) {
     win();
   } else {
-    showPopup(); // ❌ show custom message box
+    // 👇 show stopped time in popup
+    document.getElementById("stoppedTime").innerText = time.toFixed(2);
+    showPopup();
   }
 }
+
 
 function win() {
   document.getElementById("result").innerText = "🔥 PERFECT!";
@@ -61,23 +64,6 @@ function closePopup() {
 }
 
 /* 🔄 Reset timer cleanly */
-function resetTimer() {
-  clearInterval(interval);
-  isRunning = false;
-  startTime = null;
-  document.getElementById("timer").innerText = "00.00";
-}
-.stopped-label {
-  color: #fff;
-  margin: 10px 0 5px;
-  font-size: 1rem;
-}
 
-.stopped-time {
-  font-size: 4rem;          /* BIG */
-  color: #ff0000;           /* Red */
-  text-shadow: 4px 4px black;
-  margin-bottom: 15px;
-}
 
 
